@@ -6,8 +6,7 @@ from collections import deque
 import random
 import numpy as np
 
-
-#############################
+######################################################
 #if you want to use GPU to boost, use these code.  
 
 import tensorflow as tf
@@ -16,7 +15,7 @@ config =  tf.compat.v1.ConfigProto( device_count = {'GPU': 2 , 'CPU': 1} )
 sess = tf.compat.v1.Session(config=config) 
 keras.backend.set_session(sess)
 
-#############################
+#####################################################
 
 
 class MountainCarTrain:
